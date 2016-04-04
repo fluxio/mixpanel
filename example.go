@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	m := mixpanel.Mixpanel{
+	m := mixpanel.Client{
 		ApiKey:    "YOUR KEY",
 		ApiSecret: "YOUR SECRET",
 	}
