@@ -30,14 +30,14 @@ const (
 	missingApiKeyError = "Mixpanel package requires ApiKey to be provided."
 )
 
-// Mixpanel structure requires api_key and api_secret associated with
+// Mixpanel Client structure requires api_key and api_secret associated with
 // your account
-type Mixpanel struct {
+type Client struct {
 	ApiKey, ApiSecret string
 }
 
-// Mixpanel's method which sends a request to the Mixpanel's server
-func (m Mixpanel) Request(
+// Mixpanel Client's method which sends a request to the Mixpanel's server
+func (m Client) Request(
 	methods []string,
 	params map[string](interface{}),
 	http_method string,
